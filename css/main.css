@@ -1,1 +1,319 @@
-// === AyeXZilla ===
+body {
+  --az-main-bg-color: #474646;
+  --az-normal-bg-color: #ffffff;
+  --az-wrapper-bg-color: #e6e6e6;
+  --az-wrapper-shdw-color: rgba(226, 223, 223, 0.2);
+  --az-thumbnail-shdw-color1: rgba(10, 171, 235, 0.2);
+  --az-thumbnail-shdw-color2: rgba(10, 220, 235, 0.2);
+  --az-name-color: #2d354a;
+  --az-title-color: #656b8f;
+  --az-description-color: #000;
+  --az-profile-a-color: #fff;
+  --az-subbtn-color: #ffffff;
+  --az-subbtn-bg-color: #000000;
+  --az-social-icon-icon-a-color: #000;
+  --az-social-icon-icon-a-bg-color: #ecebeb;
+  --az-social-icon-icon-a-shdw1-color: rgba(0, 0, 0, 0.2);
+  --az-social-icon-icon-a-shdw2-color: rgba(0, 0, 0, 0.2);
+  --az-social-icon-icon-count-color: #050507;
+  --az-social-icon-icon-text-color: #383a41;
+  --az-social-icon-icon-switchicon-color: #fff;
+  --az-switchdiv-switchtext-color: rgb(243, 233, 233);
+  --az-love-text-color: #aab0c4;
+  --az-love-text-a-color: rgb(16, 212, 238);
+  --az-a-link: #000;
+  --az-a-visited: red;
+  --az-a-hover: green;
+  --az-a-active: yellow;
+  --az-text-red: red;
+  --az-text-black: black;
+  --az-social-icon-yt-icon-hover-shdw1-color: #f13636;
+  --az-social-icon-yt-icon-hover-shdw2-color: #f14b4b;
+  --az-social-icon-tt-icon-hover-shdw1-color: #007df2;
+  --az-social-icon-tt-icon-hover-shdw2-color: #e71fee;
+  --az-social-icon-ig-icon-hover-shdw1-color: #f77737;
+  --az-social-icon-ig-icon-hover-shdw2-color: #833ab4;
+  --az-social-icon-icon-a-hover-shdw1-color: rgba(24, 197, 228, 0.2);
+  --az-social-icon-icon-a-hover-shdw2-color: rgba(27, 219, 155, 0.2);
+  --az-slider-bg-color: #fff;
+  --az-slider-before-bg-color: #000000;
+  --az-checked-slider-bg-color: rgb(100, 97, 97);
+  --az-focus-slider-boxshdw-color: black;
+  --az-checked-slider-before-bg-color: #ffffff;
+}
+body.dark-theme {
+  --az-main-bg-color: #000000;
+  --az-normal-bg-color: #212121;
+  --az-wrapper-bg-color: #2b303b;
+  --az-wrapper-shdw-color: rgba(143, 141, 141, 0.2);
+  --az-thumbnail-shdw-color1: rgba(10, 171, 235, 0.2);
+  --az-thumbnail-shdw-color2: rgba(10, 220, 235, 0.2);
+  --az-name-color: #fdfeff;
+  --az-title-color: #7c8097;
+  --az-description-color: #fdfeff;
+  --az-profile-a-color: #fff;
+  --az-subbtn-color: #000000;
+  --az-subbtn-bg-color: #ffffff;
+  --az-social-icon-icon-a-color: #ffffff;
+  --az-social-icon-icon-a-bg-color: rgb(8, 8, 8);
+  --az-social-icon-icon-a-shdw1-color: rgba(0, 0, 0, 0.2);
+  --az-social-icon-icon-a-shdw2-color: rgba(0, 0, 0, 0.2);
+  --az-social-icon-icon-count-color: #ffffff;
+  --az-social-icon-icon-text-color: #9da1b3;
+  --az-social-icon-icon-switchicon-color: #fff;
+  --az-switchdiv-switchtext-color: rgb(216, 206, 206);
+  --az-love-text-color: #aab0c4;
+  --az-love-text-a-color: rgb(230, 67, 67);
+  --az-a-link: rgb(221, 221, 228);
+  --az-a-visited: rgb(196, 11, 11);
+  --az-a-hover: green;
+  --az-a-active: yellow;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --az-main-bg-color: #000000;
+    --az-normal-bg-color: #212121;
+    --az-wrapper-bg-color: #2b303b;
+    --az-wrapper-shdw-color: rgba(143, 141, 141, 0.2);
+    --az-thumbnail-shdw-color1: rgba(10, 171, 235, 0.2);
+    --az-thumbnail-shdw-color2: rgba(10, 220, 235, 0.2);
+    --az-name-color: #fdfeff;
+    --az-title-color: #7c8097;
+    --az-description-color: #fdfeff;
+    --az-profile-a-color: #fff;
+    --az-subbtn-color: #000000;
+    --az-subbtn-bg-color: #ffffff;
+    --az-social-icon-icon-a-color: #ffffff;
+    --az-social-icon-icon-a-bg-color: rgb(8, 8, 8);
+    --az-social-icon-icon-a-shdw1-color: rgba(0, 0, 0, 0.2);
+    --az-social-icon-icon-a-shdw2-color: rgba(0, 0, 0, 0.2);
+    --az-social-icon-icon-count-color: #ffffff;
+    --az-social-icon-icon-text-color: #9da1b3;
+    --az-social-icon-icon-switchicon-color: #fff;
+    --az-switchdiv-switchtext-color: rgb(216, 206, 206);
+    --az-love-text-color: #aab0c4;
+    --az-love-text-a-color: rgb(230, 67, 67);
+    --az-a-link: rgb(221, 221, 228);
+    --az-a-visited: rgb(196, 11, 11);
+    --az-a-hover: green;
+    --az-a-active: yellow;
+  }
+  body.light-theme {
+    --az-main-bg-color: #474646;
+    --az-normal-bg-color: #ffffff;
+    --az-wrapper-bg-color: #e6e6e6;
+    --az-wrapper-shdw-color: rgba(226, 223, 223, 0.2);
+    --az-thumbnail-shdw-color1: rgba(10, 171, 235, 0.2);
+    --az-thumbnail-shdw-color2: rgba(10, 220, 235, 0.2);
+    --az-name-color: #2d354a;
+    --az-title-color: #656b8f;
+    --az-description-color: #000;
+    --az-profile-a-color: #fff;
+    --az-subbtn-color: #ffffff;
+    --az-subbtn-bg-color: #000000;
+    --az-social-icon-icon-a-color: #000;
+    --az-social-icon-icon-a-bg-color: #ecebeb;
+    --az-social-icon-icon-a-shdw1-color: rgba(0, 0, 0, 0.2);
+    --az-social-icon-icon-a-shdw2-color: rgba(0, 0, 0, 0.2);
+    --az-social-icon-icon-count-color: #050507;
+    --az-social-icon-icon-text-color: #383a41;
+    --az-social-icon-icon-switchicon-color: #fff;
+    --az-switchdiv-switchtext-color: rgb(243, 233, 233);
+    --az-love-text-color: #aab0c4;
+    --az-love-text-a-color: rgb(16, 212, 238);
+    --az-a-link: #000;
+    --az-a-visited: red;
+    --az-a-hover: green;
+    --az-a-active: yellow;
+  }
+}
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: var(--az-normal-bg-color);
+  font-family: "Roboto", Arial, sans-serif;
+}
+.toggleswitch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+.toggleswitch #themeCheckbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--az-slider-bg-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--az-slider-before-bg-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+#themeCheckbox:checked + .slider {
+  background-color: var(--az-checked-slider-bg-color);
+}
+#themeCheckbox:focus + .slider {
+  box-shadow: 0 0 1px var(--az-focus-slider-boxshdw-color);
+}
+#themeCheckbox:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+  content: "";
+  background-color: var(--az-checked-slider-before-bg-color);
+}
+.slider.round {
+  border-radius: 17px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.errDes {
+  color: var(--az-description-color);
+}
+
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes snowflakes-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+}
+.snowflake {
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  -webkit-animation-delay: 2s, 0s;
+  animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  -webkit-animation-delay: 4s, 2.5s;
+  animation-delay: 4s, 2.5s;
+}
+
+/* === AyeXZilla 2022 === */
