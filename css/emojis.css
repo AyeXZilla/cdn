@@ -39,46 +39,6 @@
     color: var(--az-name-color);
 }
 
-.yt-profile-pic {
-    width: 120px;
-    border-radius: 50%;
-}
-
-.yt-cover-photo {
-    width: 100%;
-    aspect-ratio: 16/4;
-    object-fit: cover;
-}
-
-.yt-channel-desc {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.yt-channel-link:link {
-    color: var(--az-a-link);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.yt-channel-link:visited {
-    color: var(--az-a-visited);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.yt-channel-link:hover {
-    color: var(--az-a-hover);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.yt-channel-link:active {
-    color: var(--az-a-active);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
 .switchdiv {
     font-size: 13px;
     text-align: center;
@@ -104,7 +64,7 @@
     flex-direction: column;
 }
 
-.social-icons .icon a {
+.my-icon  {
     color: #ffffff;
     width: 40px;
     height: 40px;
@@ -226,4 +186,14 @@ input:checked+.slider:before {
     font-family: "Noto Color Emoji", serif;
     font-size: 10em;
     overflow: auto
+}
+
+.singleEmoji {
+    width: 200px ;
+    height: 200px ;
+}
+
+.multipleEmoji {
+    width: 100px;
+    height : 100px;
 }
