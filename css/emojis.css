@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+
+/* === SubCount Page === */
+.subcount-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--az-main-bg-color);
+    font-size: 100%;
+    transition: background 0.5s ease;
+}
+
+.h1-title {
+    color: var(--az-name-color);
+}
+
+.subcount-wrapper {
+    padding: 15px 10px 15px 10px;
+    background: var(--az-wrapper-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 6px 40px var(--az-wrapper-shdw-color);
+    transition: background 0.5s ease;
+}
+
+.subcount-title {
+    color: var(--az-name-color);
+}
+
+#errorAlert {
+    color: red;
+}
+
+#channelsDataDiv {
+    color: var(--az-name-color);
+}
+
+.yt-profile-pic {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.yt-cover-photo {
+    width: 100%;
+    aspect-ratio: 16/4;
+    object-fit: cover;
+}
+
+.yt-channel-desc {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.yt-channel-link:link {
+    color: var(--az-a-link);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.yt-channel-link:visited {
+    color: var(--az-a-visited);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.yt-channel-link:hover {
+    color: var(--az-a-hover);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.yt-channel-link:active {
+    color: var(--az-a-active);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.switchdiv {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.switchtext {
+    color: var(--az-switchdiv-switchtext-color);
+    font-size: 13px;
+}
+
+.social-icons {
+    width: 50%;
+    display: flex;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    justify-content: space-around
+}
+
+.social-icons .icon {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.social-icons .icon a {
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(8, 8, 8);
+    box-shadow: 0 13px 26px var(--az-social-icon-icon-a-shdw1-color),
+        0 3px 6px var(--az-social-icon-icon-a-shdw2-color);
+    transition: background 0.5s ease, box-shadow 0.4s;
+}
+
+#more,
+#myMore {
+    display: none;
+}
+
+.myBtn {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btnText {
+    color: var(--az-name-color);
+}
+
+/* ===== Toggle Switch ===== */
+.toggleswitch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.toggleswitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--az-slider-bg-color);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/* slider = slider background */
+/* slider before = sliding part */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--az-slider-before-bg-color);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: var(--az-checked-slider-bg-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--az-focus-slider-boxshdw-color);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+    content: "";
+    background-color: var(--az-checked-slider-before-bg-color);
+}
+
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.errDes {
+    color: var(--az-description-color);
+}
+
+.emojitxt {
+    font-family: "Noto Color Emoji", serif;
+    color: var(--az-name-color);
+}
+
+.googlenoto {
+    font-family: "Noto Color Emoji", serif;
+}
+
+.mytxt {
+    color: var(--az-name-color);
+}
+
+.googleemojitxt {
+    font-family: "Noto Color Emoji", serif;
+    font-size: 5em;
+    overflow: auto
+}
+
+.bigtxt {
+    font-family: "Noto Color Emoji", serif;
+    font-size: 10em;
+    overflow: auto
+}
