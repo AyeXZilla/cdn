@@ -518,7 +518,8 @@ function convertHexToEmoji(hex) {
             errorAlert.innerHTML = ''
             loading.innerHTML = `<i class="fa-solid fa-spinner fa-spin-pulse h1-title"></i>`
                 const input = document.getElementById('input').value;
-                const x = input.toLowerCase()                 
+                const x = input.toLowerCase()
+                const X = input.toUpperCase()                 
                 const separated = x.split('+')
                 const a = separated[0]
                 const b = separated[1]          
@@ -533,8 +534,8 @@ function convertHexToEmoji(hex) {
                 else if (qualifiedEmojis.includes(x)) {
                         getAllEmojiCombinations(x)
                 }
-                else if (qualifiedUnicodes.includes(x)) {
-                        findEmojiforUnicode(x)
+                else if (qualifiedUnicodes.includes(X)) {
+                        findEmojiforUnicode(X)
                 }   
                 else if (valida && validb) {
                         getEmojiCombination(a , b);
